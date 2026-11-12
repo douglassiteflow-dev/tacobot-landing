@@ -1,0 +1,19 @@
+{
+  "name": "Tacobot — Signal Bot Control Center",
+  "short_name": "Tacobot",
+  "description": "Administrationsplattform för Signal-bot, sifferstyrd meny, bokningar och automatisk gruppskapning.",
+  "start_url": "/admin",
+  "display": "standalone",
+  "background_color": "#0B0D17",
+  "theme_color": "#62F5AD",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "sizes": "192x192 512x512",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
+

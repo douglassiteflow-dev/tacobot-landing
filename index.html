@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="sv" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Tacobot Pro – Självgående E2E-krypterad Signal-bot</title>
+    <meta name="description" content="Tacobot Pro – Smartare, snabbare och enklare Signal-bokning med automatisk gruppskapning och sifferstyrd meny." />
+    
+    <!-- PWA & GrapheneOS Mobile Meta Tags -->
+    <meta name="theme-color" content="#F59E0B" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="Tacobot" />
+    <link rel="icon" type="image/svg+xml" href="/icon.svg" />
+    <link rel="manifest" href="/manifest.webmanifest" />
+
+    <!-- 100% Zero-Trace & Inga externa Google Fonts/Trackers -->
+    <script type="module" crossorigin src="/assets/index-DE7gxmS-.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-BtBsu9WZ.css">
+  </head>
+  <body class="bg-[#070A10] text-slate-100 antialiased min-h-screen selection:bg-amber-500 selection:text-black">
+    <div id="root"></div>
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/sw.js').catch(() => {});
+        });
+      }
+    </script>
+  </body>
+</html>
